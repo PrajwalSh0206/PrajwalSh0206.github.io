@@ -7,7 +7,6 @@ const assets = [
   "/assets/undraw_android_jr64.svg",
   "/assets/undraw_web_developer_p3e5.svg",
   "/assets/undraw_responsive_6c8s.svg",
-  "/assets/undraw_responsive_6c8s.svg",
   "/assets/android-chrome-512x512.png",
 ]
 
