@@ -8,7 +8,7 @@ const assets = [
   "/assets/undraw_web_developer_p3e5.svg",
   "/assets/undraw_responsive_6c8s.svg",
   "/assets/undraw_responsive_6c8s.svg",
-  "/assets/favicon/android-chrome-512x512.png",
+  "/assets/android-chrome-512x512.png",
 ]
 
 self.addEventListener("install", installEvent => {
