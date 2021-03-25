@@ -10,6 +10,9 @@
     <title>Prajwal Shetty</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        html {
+                scroll-behavior: smooth;
+            }
         body{
             font-family: 'Poppins', sans-serif;
         }
@@ -23,11 +26,29 @@
             -ms-overflow-style: none;  /* IE and Edge */
             scrollbar-width: none;  /* Firefox */
         }
+        @-webkit-keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+#scrollbutton{
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
     </style>
 </head>
 <body class="bg-gray-50 ">
+    <div  id="body1">
+    <button id="scrollbutton" class="fixed hidden bg-indigo-500 focus:outline-none transform active:scale-95 shadow-lg z-50 text-3xl py-2 px-4 text-white rounded-full bottom-0 right-0 m-3">
+        <i class="fas fa-angle-double-up"></i>
+    </button>
     <div class="w-full text-gray-500  rounded-md">
-        <div class="pt-52 pb-20 border bg-white" id="background">
+        <div class="pt-52 pb-20 border bg-white bg-fixed" id="background">
         <img src="./assets/IMG_20170503_151143.jpg" class="mx-auto h-48 md:h-64 rounded-full bg-white border mb-2 p-2 -mt-40" alt="Profile Pic">
         </div>
         <div class="bg-white p-5 border md:w-3/4  -mt-16 mx-auto">
@@ -126,10 +147,10 @@
     <div class="md:w-1/2 w-full capitalize text-3xl font-medium text-center">
         you can follow me here
         <div class="flex justify-center space-x-3 pt-3">
-            <a href="https://github.com/PrajwalSh0206" target="_blank" class="bg-white transform hover:scale-95 text-gray-600 shadow py-3 px-3 focus:outline-none rounded-md text-4xl ">
+            <a href="https://github.com/PrajwalSh0206" target="_blank" class="bg-white transform hover:scale-110 text-gray-600 shadow py-3 px-3 focus:outline-none rounded-md text-4xl ">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.facebook.com/prajwal.shetty.127201" target="_blank" class="bg-white transform hover:scale-95 text-gray-600 shadow py-3 px-5 focus:outline-none rounded-md text-4xl ">
+            <a href="https://www.facebook.com/prajwal.shetty.127201" target="_blank" class="bg-white transform hover:scale-110 text-gray-600 shadow py-3 px-5 focus:outline-none rounded-md text-4xl ">
                 <i class="fab  fa-facebook-f"></i>
             </a>
         </div>
@@ -139,5 +160,9 @@
     Thank You For Visiting
 </div>
 </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./js/index.js">
+</script>
 </body>
 </html>
