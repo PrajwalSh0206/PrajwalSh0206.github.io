@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.9 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -436,6 +436,14 @@ button {
   cursor: pointer;
 }
 
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
+
 table {
   border-collapse: collapse;
 }
@@ -549,10 +557,6 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -591,10 +595,6 @@ video {
   display: block;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -607,8 +607,8 @@ video {
   height: 16rem;
 }
 
-.w-8 {
-  width: 2rem;
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-16 {
