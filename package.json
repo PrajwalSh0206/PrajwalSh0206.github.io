@@ -1,0 +1,26 @@
+{
+  "name": "prajwalsh0206.github.io",
+  "version": "1.0.0",
+  "description": "<p>A simple portfolio to describe about myself and to to experiment with it as well as to see it is responsive in all the devices</p>\r npx tailwindcss -o ./css/tailwind.css --watch",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind": "npx tailwindcss -i ./css/src/input.css -o ./css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrajwalSh0206/PrajwalSh0206.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrajwalSh0206/PrajwalSh0206.github.io/issues"
+  },
+  "homepage": "https://github.com/PrajwalSh0206/PrajwalSh0206.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.2.4"
+  }
+}

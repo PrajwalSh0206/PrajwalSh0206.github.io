@@ -6,203 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/tailwind.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <meta name="description" content="Hello. This is my portfolio describing about me.">
     <title>Prajwal Shetty</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-
-        html {
-            scroll-behavior: smooth;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
 
-        body::-webkit-scrollbar {
-            display: none;
+        .bg-hero-pattern {
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%233a4454' fill-opacity='0.4' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
         }
-
-        body {
-            -ms-overflow-style: none;
-            /* IE and Edge */
-            scrollbar-width: none;
-            /* Firefox */
-        }
-        li>a{
-            position: relative;
-        }
-        li>a::after{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left:50%;
-            width: 0%;
-            height: 2px;
-            margin-top: 8px;
-            background-color: #5a5252;
-            transition: all 0.5s ease;
-        }
-        li>a:hover::after{
-            width: 100%;
-            left:0
-        }  
-        #sidenav>a{
-            position: relative;
-        }
-        #sidenav>a::after{
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left:50%;
-            width: 0%;
-            height: 2px;
-            margin-top: 8px;
-            background-color: #fff;
-            transition: all 0.5s ease;
-        }
-        #sidenav>a:hover::after{
-            width: 100%;
-            left:0
-        }   
     </style>
+
 </head>
 
-<body class="bg-gray-200 flex  flex-col ">
-    <!-- Sidenav -->
-    <div class="bg-gray-800 opacity-90 hidden  flex-col space-y-4 text-white items-center justify-center fixed w-screen h-screen z-50" id="sidenav">
-        <button onclick="sideclose()" class="absolute top-5 right-5">
-            <i class="fas fa-times"></i>
-
-        </button>
-            <a onclick="sideclose()" href="#about">About Me</a>
-            <a onclick="sideclose()" href="#skills">Skills</a>
-            <a onclick="sideclose()" href="#contact">Contact</a>
-
-    </div>
-    <!--Navbar-->
-    <nav class="p-5 flex bg-white z-40 sticky top-0 justify-between shadow">
-        <a href="#" class="flex items-center space-x-2">
-            <img src="./assets/favicon/favicon-32x32.png" alt="" srcset="">
-            <p>Prajwal Shetty</p>
-        </a>
-
-        <ul class="md:flex hidden items-center space-x-5">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+<body class="flex w-screen flex-col items-center h-screen ">
+    <div
+        class="h-20 w-screen flex justify-between items-center px-10 border-gray-400 border-b-2 text-gray-600 shadow-md">
+        <div class="flex items-center text-2xl space-x-1 ">
+            <img src="./assets/Group 6.png" class="h-10" alt="" srcset="">
+            <p>RAJWAL SHETTY</p>
+        </div>
+        <ul class="inline-flex space-x-6 text-lg">
+            <a href="#">Home</a>
+            <a href="#">What I Do</a>
+            <a href="#">Skill</a>
+            <a href="#">Contact</a>
         </ul>
-
-        <button class="md:hidden" onclick="showside()">
-            <i class="fas fa-bars"></i>
-        </button>
-    </nav>
-
-    <div class="flex items-center justify-center px-3 md:px-12 flex-col py-6">
-        <img src="./assets/android-chrome-512x512.png" class="z-30 h-40 md:h-64 rounded-full bg-white p-3  border-gray-400" alt="">
-        <!-- About Me -->
-        <div class="flex flex-col items-center w-full -mt-20 md:-mt-28 pb-10 space-y-4 rounded-lg  space-y-3 bg-white p-5">
-            <p class="mt-16 md:mt-24 text-2xl md:text-4xl text-gray-700" id="about">#About Me</p>
-            <p class="md:text-2xl px-4 md:px-14 text-center text-gray-600">Hi, everyone. My name is Prajwal and I am a developer who loves to experiment with web design and create amazing things.</p>
-        </div>
-        <div class="p-5 py-10 bg-indigo-500 space-y-5 w-full flex-col flex items-center">
-            <p class=" text-2xl md:text-4xl text-white">#What I Know</p>
-            <div class="flex flex-col md:flex-row items-center md:space-x-5 text-indigo-600 text-xl">
-                <div class="bg-white items-center mb-3 px-10 py-3 flex space-x-5 rounded-full">
-                    <i class="fas fa-pencil-alt"></i>
-                    <p>Frontend Development</p>
-                </div>
-                <div class="bg-white items-center mb-3 px-10 py-3 flex space-x-5 rounded-full">
-                    <i class="fas fa-server"></i>
-                    <p>Backend Development</p>
-                </div> 
-                <div class="bg-white items-center mb-3 px-10 py-3 flex space-x-5 rounded-full">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>App Development</p>
-                </div>
-            </div>
-        </div>
-        <!-- Skills -->
-        <div class="py-6 md:py-10 w-full flex bg-white flex-col  text-gray-600">
-            <p class=" text-2xl md:text-4xl self-center" id="skills">#Skills</p>
-            <div class="flex md:flex-row flex-col md:space-x-8 justify-start flex-wrap  p-5 mt-8">
-                <div class="md:p-7 p-4 mb-10 md:mb-3 border-2 flex flex-col items-center border-gray-700 text-4xl md:text-7xl rounded-md ">
-                    <i class="fab fa-js-square md:-mt-20 -mt-12 bg-white p-3"></i>
-                    <p class="text-2xl">Javascript</p>
-                </div>
-                <div class="md:p-7 p-4 mb-10 md:mb-3 border-2 flex flex-col items-center border-gray-700 text-4xl md:text-7xl rounded-md ">
-                    <i class="fab fa-html5 md:-mt-20 -mt-12 bg-white p-3"></i>
-                    <p class="text-2xl">Html</p>
-                </div>
-                <div class="md:p-7 p-4 mb-10 md:mb-3 border-2 flex flex-col items-center border-gray-700 text-4xl md:text-7xl rounded-md ">
-                    <i class="fab fa-css3-alt md:-mt-20 -mt-12 bg-white p-3"></i>
-                    <p class="text-2xl">Css</p>
-                </div>
-                <div class="md:p-7 p-4 mb-10 md:mb-3 border-2 flex flex-col items-center border-gray-700 text-4xl md:text-7xl rounded-md ">
-                    <i class="fab fa-node-js md:-mt-20 -mt-12 bg-white p-3"></i>
-                    <p class="text-2xl">Node Js</p>
-                </div>
-            </div>
-                      
-            <div class="flex md:flex-row flex-col md:space-x-8 md:justify-end flex-wrap  p-5 ">
-                <div class="md:p-7 p-4 mb-10 md:mb-3 border-2 flex flex-col items-center border-gray-700 text-4xl md:text-7xl rounded-md ">
-                    <i class="fab fa-sass  md:-mt-20 -mt-12 bg-white p-3"></i>
-                    <p class="text-2xl">Sass</p>
-                </div>
-                <div class="md:p-7 p-4 mb-10 md:mb-3 border-2 flex flex-col items-center border-gray-700 text-4xl md:text-7xl rounded-md ">
-                    <i class="fab fa-react  md:-mt-20 -mt-12 bg-white p-3"></i>
-                    <p class="text-2xl">React Js</p>
-                </div>
-                <div class="md:p-7 p-4 mb-10 md:mb-3 border-2 flex flex-col items-center border-gray-700 text-4xl md:text-7xl rounded-md ">
-                    <i class="fab fa-vuejs  md:-mt-20 -mt-12 bg-white p-3"></i>
-                    <p class="text-2xl">Vue Js</p>
-                </div>
-                <div class="md:p-7 p-4 mb-10 md:mb-3 border-2 flex flex-col items-center border-gray-700 text-4xl md:text-7xl rounded-md ">
-                    <i class="fab fa-android  md:-mt-20 -mt-12 bg-white p-3"></i>
-                    <p class="text-2xl">Android Studio</p>
-                </div>
-            </div>
-        </div>
-        <!-- Contact -->
-        <div class=" p-5 rounded-b-md  flex flex-col md:flex-row items-center  bg-indigo-500 bg-white w-full">
-            <div class="md:w-1/2 p-5">
-                <img src="./assets/Social Media Notifications.svg" class="bg-white rounded-md" alt="" srcset="">
-            </div>
-            <div class="md:w-1/2 flex flex-col justify-center space-y-3 items-center text-white">            
-                <p class=" text-2xl md:text-4xl self-center" id="contact">#Follow Me Here</p>
-                <div class="flex md:text-2xl  items-center space-x-2 ">
-                    <div class="text-indigo-500 bg-white flex items-center justify-center w-10 rounded-full h-10">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <a href="https://github.com/PrajwalSh0206" >PrajwalSh0206</a>
-                </div>
-                <div class="flex md:text-2xl items-center space-x-3 ">
-                    <div class="text-indigo-500 bg-white flex items-center justify-center w-10 rounded-full h-10">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <a href="mailto:prajwalshetty57@gmail.com">prajwalshetty57@gmail.com</a>
-                </div>
-              
-            </div>
-        </div>
     </div>
-    <script>
-        function sideclose(){
-            var element = document.getElementById("sidenav");
-            element.classList.remove("flex");
-            element.classList.add('hidden')
-        }
-        function showside(){
-            var element = document.getElementById("sidenav");
-            element.classList.remove("hidden");
-            element.classList.add('flex')
-        }
-    </script>
+
+    <!--Hero Patterns Starts-->
+    <div class="bg-hero-pattern w-screen h-72 border-b-2 border-gray-400">
+    </div>
+    <!--Hero Patterns Ends-->
+    <div class="flex flex-col space-y-3 w-4/6 border-2 items-center border-gray-400 -mt-24 p-10 bg-white">
+        <p class="text-4xl text-gray-600">Hello everyone, I am Prajwal Shetty</p>
+        <p class="text-xl text-center text-gray-500">a fellow developer who has keen interest in development and experimenting with new technologies. Feel free to explore my projects and experiments with it. </p>
+        <a href="#" class="bg-gray-600 shadow-md flex p-5 rounded-md">
+        
+        </a>
+    </div>
+
 </body>
 
 </html>
