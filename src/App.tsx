@@ -11,19 +11,15 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Function to call when the loading is complete
-    const handleLoad = () => {
-      setIsLoading(false);
-    };
+    const handleLoad = () => setIsLoading(false);
 
-    // Add event listener for 'load' event
-    window.addEventListener('load', handleLoad);
-
-    // Cleanup function to remove the event listener
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
-  }, []); // Empty dependency array means this effect runs once on mount
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
+    }
+  }, []);
 
   return (
     <>

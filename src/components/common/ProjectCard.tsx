@@ -1,12 +1,8 @@
 import React from "react"
+import { ProjectPropsDto } from "../../props/dto"
 
-type ProjectProps = {
-    image: string
-    title: string,
-    link: string;
-};
 
-const ProjectCard: React.FC<ProjectProps> = ({ image, title, link }) => {
+const ProjectCard: React.FC<ProjectPropsDto> = ({ image, title, link }) => {
 
     return (
         <div className='rounded-md items-center w-full border border-indigo-200 shadow-md flex'>
