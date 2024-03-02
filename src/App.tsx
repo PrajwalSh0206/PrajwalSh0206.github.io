@@ -13,13 +13,13 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoad = () => setIsLoading(false);
+    const handleLoad = () => setTimeout(() => { setIsLoading(false) }, 5000);
 
     if (document.readyState === 'complete') {
-      handleLoad();
+      handleLoad()
     } else {
       window.addEventListener('load', handleLoad);
-      return () => window.removeEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad)
     }
   }, []);
 
