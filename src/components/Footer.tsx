@@ -1,5 +1,5 @@
 import message from '../assets/world-connection-two-color-93f1b.svg'
-import { contactList } from '../props/data/contactData';
+import { contactList } from '../props/data/contactList';
 import ContactLink from './common/ContactLink';
 
 const FooterSection = () => {
