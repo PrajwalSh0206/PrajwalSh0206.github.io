@@ -6,7 +6,7 @@ function HeroPage() {
             <div className='w-7/12 flex flex-col space-y-6 text-gray-700 pl-10'>
                 <p className='text-6xl leading-tight'>Hello&#128075;my name is <br />Prajwal Shetty</p>
                 <p className='text-xl text-gray-600 text-justify'>
-                    I'm a developer constantly seeking new challenges and opportunities to expand my skillset. Dive into my portfolio to discover my journey and how I approach problem-solving with a creative and enthusiastic spirit.
+                I'm a developer constantly seeking new challenges and opportunities to expand my skillset. Welcome to my portfolio, where you can discover my journey and how I approach problem-solving with a creative and enthusiastic spirit.
                 </p>
                 <div className='flex space-x-5'>
                     <button className="flex space-x-2 items-center transition duration-500 transform border-b-8 border-indigo-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-800 hover:text-white rounded-lg w-fit p-2 text-xl border text-indigo-800">
