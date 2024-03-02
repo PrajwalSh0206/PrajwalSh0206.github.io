@@ -1,5 +1,4 @@
 import React from "react"
-import { motion } from "framer-motion"
 
 type SkillProps = {
     children: React.ReactNode
@@ -11,7 +10,7 @@ type SkillProps = {
 const SkillCard: React.FC<SkillProps> = ({ header, col1, col2, children }) => {
 
     return (
-        <motion.div whileInView={{ opacity: 1 }}
+        <div
             className='flex flex-col bg-white space-y-2 w-full rounded-md shadow-md border border-indigo-900 text-xl'>
             <div className='bg-indigo-900 rounded-t-md text-white p-5 text-center flex space-x-3 items-center justify-center'>
                 {children}
@@ -25,7 +24,7 @@ const SkillCard: React.FC<SkillProps> = ({ header, col1, col2, children }) => {
                     {col2.map((skill: string) => <p key={skill}>{skill}</p>)}
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
