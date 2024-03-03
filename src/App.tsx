@@ -2,7 +2,6 @@ import './css/App.scss'
 import HeroPage from './components/HeroPage'
 import SkillPage from './components/SkillPage'
 import './css/Navbar.scss'
-import ProjectSection from './components/ProjectSection'
 import FooterSection from './components/Footer'
 import Loader from './components/Loader'
 import { useEffect, useState } from 'react'
@@ -37,7 +36,7 @@ function App() {
         {/* Skills Page */}
         <SkillPage />
         {/* Project Page */}
-        <ProjectSection />
+        {/* <ProjectSection /> */}
       </div>
       {/* Footer Page */}
       <FooterSection />
