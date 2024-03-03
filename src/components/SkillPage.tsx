@@ -4,7 +4,7 @@ import SkillCard from './common/SkillCard'
 function SkillPage() {
     
     return (
-        <div className='w-full items-center justify-center p-10 rounded-md border border-indigo-900 bg-indigo-50 text-indigo-900 flex space-x-5 mb-10' id='skills'>
+        <div className='w-full items-center justify-center p-10 rounded-md border border-indigo-900 bg-indigo-50 text-indigo-900 flex space-x-5' id='skills'>
             <img src={idea} className='w-5/12' alt="" srcSet="" />
             <div className='w-3/12 space-y-5'>
                 <SkillCard header='Frontend' col1={["Html", "Css/Scss", "Tailwind"]} col2={["Javascript", "Typescript"]}>
