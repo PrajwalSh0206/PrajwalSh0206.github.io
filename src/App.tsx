@@ -2,26 +2,26 @@ import './css/App.scss'
 import HeroPage from './components/HeroPage'
 import SkillPage from './components/SkillPage'
 import './css/Navbar.scss'
-import ProjectSection from './components/ProjectSection'
+// import ProjectSection from './components/ProjectSection'
 import FooterSection from './components/Footer'
-import Loader from './components/Loader'
-import { useEffect, useState } from 'react'
+// import Loader from './components/Loader'
+// import { useEffect } from 'react'
 import { navlist } from './props/data/navLink'
 import NavLink from './components/common/NavLink'
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const handleLoad = () => setTimeout(() => { setIsLoading(false) }, 3000);
+  // useEffect(() => {
+  //   const handleLoad = () => setTimeout(() => { setIsLoading(false) }, 3000);
 
-    if (document.readyState === 'complete') {
-      handleLoad()
-    } else {
-      window.addEventListener('load', handleLoad);
-      return () => window.removeEventListener('load', handleLoad)
-    }
-  }, []);
+  //   if (document.readyState === 'complete') {
+  //     handleLoad()
+  //   } else {
+  //     window.addEventListener('load', handleLoad);
+  //     return () => window.removeEventListener('load', handleLoad)
+  //   }
+  // }, []);
 
   return (
     <>
