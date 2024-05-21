@@ -1,7 +1,7 @@
 import React from "react"
-import { ButtonPropsDto } from "../../props/dto"
+import { buttonPropsDto } from "../../props/dto"
 
-const HeroButton: React.FC<ButtonPropsDto> = ({ image, link, title, classes, target="_self" }) => {
+const HeroButton: React.FC<buttonPropsDto> = ({ image, link, title, classes, target="_self" }) => {
     return (
         <a href={link} className={classes} target={target}>
             {image}

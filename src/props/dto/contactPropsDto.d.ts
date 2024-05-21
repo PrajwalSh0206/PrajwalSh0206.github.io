@@ -1,6 +1,6 @@
 import React from "react";
 
-export type ContactPropsDto = {
+export type contactPropsDto = {
     image: React.ReactNode,
     link: string,
     href: string;

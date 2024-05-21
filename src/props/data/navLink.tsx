@@ -1,6 +1,6 @@
-import { NavLinkPropsDto } from "../dto";
+import { navLinkPropsDto } from "../dto";
 
-export const navlist: Array<NavLinkPropsDto> = [
+export const navlist: Array<navLinkPropsDto> = [
     {
         title: "Home", link: "#home"
     }, {

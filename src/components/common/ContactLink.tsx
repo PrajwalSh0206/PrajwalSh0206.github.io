@@ -1,6 +1,6 @@
-import { ContactPropsDto } from "../../props/dto"
+import { contactPropsDto } from "../../props/dto"
 
-const ContactLink: React.FC<ContactPropsDto> = ({ image, link, href }) => {
+const ContactLink: React.FC<contactPropsDto> = ({ image, link, href }) => {
     return (
         <li className='flex space-x-5 items-center'>
             <div className='bg-white text-indigo-600 p-3 rounded-full'>

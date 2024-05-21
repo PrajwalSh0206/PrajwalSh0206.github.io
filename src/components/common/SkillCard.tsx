@@ -1,7 +1,7 @@
 import React from "react"
-import { SkillPropsDto } from "../../props/dto"
+import { skillPropsDto } from "../../props/dto"
 
-const SkillCard: React.FC<SkillPropsDto> = ({ header, col1, col2, children }) => {
+const SkillCard: React.FC<skillPropsDto> = ({ header, col1, col2, children }) => {
 
     return (
         <div

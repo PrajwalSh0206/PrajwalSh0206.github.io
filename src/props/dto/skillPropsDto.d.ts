@@ -1,6 +1,6 @@
 import React from "react";
 
-export type SkillPropsDto = {
+export type skillPropsDto = {
     children: React.ReactNode
     header: string,
     col1: string[];

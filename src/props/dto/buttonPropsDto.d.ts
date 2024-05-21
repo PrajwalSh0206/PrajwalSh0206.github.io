@@ -1,6 +1,6 @@
 import React from "react";
 
-export type ButtonPropsDto = {
+export type buttonPropsDto = {
     classes: string,
     image: React.ReactNode,
     link: string,
