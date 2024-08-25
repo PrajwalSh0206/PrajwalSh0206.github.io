@@ -1,49 +1,25 @@
-import './css/App.scss'
-import HeroPage from './components/HeroPage'
-import SkillPage from './components/SkillPage'
-import './css/Navbar.scss'
+import './css/App.scss';
+import HeroPage from './components/HeroPage';
+import Skill from './components/Skills/Skill';
+import './css/Navbar.scss';
 // import ProjectSection from './components/ProjectSection'
-import FooterSection from './components/Footer'
-// import Loader from './components/Loader'
-// import { useEffect } from 'react'
-import { navlist } from './props/data/navLink'
-import NavLink from './components/common/NavLink'
+import FooterSection from './components/Footer';
+
+import { navlist } from './props/data/navLink';
+import NavLink from './components/common/NavLink';
+import About from './components/About';
 
 function App() {
-  // const [isLoading, setIsLoading] = useState(true);
-
-  // useEffect(() => {
-  //   const handleLoad = () => setTimeout(() => { setIsLoading(false) }, 3000);
-
-  //   if (document.readyState === 'complete') {
-  //     handleLoad()
-  //   } else {
-  //     window.addEventListener('load', handleLoad);
-  //     return () => window.removeEventListener('load', handleLoad)
-  //   }
-  // }, []);
-
   return (
-    <>
-      {/* {isLoading && <Loader></Loader>} */}
-      <div className='flex p-5 w-full shadow-md sticky z-40 top-0 bg-white shadow-gray-200 border-b-2 border-indigo-100 justify-between items-center px-10'>
-        <p className='text-3xl title'>
-          Prajwal Shetty
-        </p>
-        <ul className='list-none flex flex-row space-x-5 text-lg'>
-          {navlist.map((link) => <NavLink key={link.title} title={link.title} link={link.link}></NavLink>)}
-        </ul>
+    <div className="flex w-full h-full">
+      <div className="w-3/12 h-100 bg-gray-800"></div>
+      <div className="w-9/12">
+        <HeroPage></HeroPage>
+        <About></About>
+        <Skill></Skill>
       </div>
-      <div className='flex flex-col items-center px-10 pb-10'>
-        {/* Hero Page */}
-        <HeroPage />
-        {/* Skills Page */}
-        <SkillPage />
-      </div>
-      {/* Footer Page */}
-      <FooterSection />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
