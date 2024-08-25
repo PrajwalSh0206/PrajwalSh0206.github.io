@@ -3,7 +3,7 @@ import { ButtonPropsDto } from '../dto';
 export const buttonList: Array<ButtonPropsDto> = [
   {
     classes:
-      'flex space-x-2 items-center group transition duration-500 transform hover:-translate-y-1 text-gray-800 border-b-8 border-gray-700 bg-white rounded-lg w-fit p-3 text-xl hover:text-white hover:bg-gray-700 hover:border-gray-500 border-2',
+      'flex space-x-2 items-center group transition duration-500 transform hover:-translate-y-1 text-gray-800 border-b-8 border-gray-700 bg-white rounded-lg w-fit p-3 text-xl hover:text-white hover:bg-gray-700 hover:border-gray-400 border-2',
     image: (
       <svg
         width="24px"
@@ -52,7 +52,7 @@ export const buttonList: Array<ButtonPropsDto> = [
       </svg>
     ),
     title: 'Getting Started',
-    link: '#',
+    link: '#about',
     target: '',
   },
 ];
