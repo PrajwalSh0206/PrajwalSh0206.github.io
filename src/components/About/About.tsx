@@ -2,7 +2,7 @@ import Title from '../common/Title';
 
 const About = () => {
   return (
-    <div className="p-20 text-white space-y-6 bg-gray-800 flex flex-col items-start text-justify" id="about">
+    <div className="p-20 text-white space-y-6 bg-gray-700 flex flex-col items-start text-justify" id="about">
       <Title borderColor="bg-white" title="What I Do"></Title>
       <div className="flex w-full space-x-10 items-start">
         <section className="flex space-x-5 items-start w-6/12">

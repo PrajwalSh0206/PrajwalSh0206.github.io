@@ -3,7 +3,7 @@ import Title from './common/Title';
 
 const Projects = () => {
   return (
-    <div className="w-full flex flex-col space-y-5 items-start p-20 bg-gray-800 border-t-2 text-white border-gray-400" id="projects">
+    <div className="w-full flex flex-col space-y-5 items-start p-20 bg-gray-700 border-t-2 text-white border-gray-400" id="projects">
       <Title borderColor="bg-white" title="Projects"></Title>
 
       <div className="w-full flex space-x-5">
