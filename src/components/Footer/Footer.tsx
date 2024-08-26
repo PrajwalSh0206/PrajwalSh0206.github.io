@@ -1,7 +1,7 @@
 const FooterSection = () => {
   return (
     <div className="w-full flex flex-col" id="contactme">
-      <div className="w-full p-5 flex text-white justify-between bg-gray-900">
+      <div className="w-full p-5 flex text-white justify-between bg-gray-800">
         <div className="flex space-x-2">
           <svg
             width="24px"
