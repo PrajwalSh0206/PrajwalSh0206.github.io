@@ -1,7 +1,4 @@
 import { ProjectPropsDto } from '../dto';
-import speech2_0 from '../../assets/projects/artificial-intelligence-isometric.svg';
-import bookmark from '../../assets/projects/mention-outline.svg';
-import chat from '../../assets/projects/chat-flatline.svg';
 
 export const projectList: Array<ProjectPropsDto> = [
   {
@@ -29,11 +26,6 @@ export const projectList: Array<ProjectPropsDto> = [
     description:
       'A mini project for college purpose which converts text to speech and speech to text. ',
   },
-  //   {
-  //     image: bookmark,
-  //     title: 'BookMark',
-  //     link: 'https://github.com/PrajwalSh0206/Bookmark-Api-With-NestJs',
-  //   },
   {
     image: (
       <svg
