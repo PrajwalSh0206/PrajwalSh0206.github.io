@@ -2,7 +2,6 @@
   a {
     p {
       position: relative;
-
       &:after {
         bottom: -10;
         content: '';
@@ -21,4 +20,8 @@
       }
     }
   }
+}
+
+#navbar {
+  background-color: #111827;
 }

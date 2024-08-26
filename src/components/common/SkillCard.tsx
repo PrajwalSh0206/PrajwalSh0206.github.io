@@ -8,7 +8,7 @@ const SkillCard: React.FC<SkillPropsDto> = ({ width, percent, title }) => {
         <p>{title}</p>
         <p>{percent}</p>
       </div>
-      <div className="w-full border border-gray-800 rounded-md">
+      <div className="w-full border bg-white border-gray-800 rounded-md">
         <div className={`bg-gray-800 p-2 ${width} rounded-md`}></div>
       </div>
     </section>
