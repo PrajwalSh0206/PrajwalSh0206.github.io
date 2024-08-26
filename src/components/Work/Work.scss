@@ -1,0 +1,13 @@
+.experience {
+  position: relative;
+  ::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    border-radius: 100%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #1f2937;
+  }
+}
