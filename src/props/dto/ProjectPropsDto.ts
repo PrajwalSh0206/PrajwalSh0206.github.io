@@ -1,5 +1,8 @@
+import React from 'react';
+
 export type ProjectPropsDto = {
-    image: string,
-    link: string,
-    title: string;
+  image: React.ReactNode;
+  link: string;
+  title: string;
+  description: string;
 };
