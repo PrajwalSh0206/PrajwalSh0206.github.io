@@ -12,7 +12,6 @@ import Work from './components/Work/Work';
 function App() {
   return (
     <div className="flex w-full h-full">
-      <div className="w-3/12"></div>
       <Navbar></Navbar>
       <div className="w-9/12">
         <HeroPage></HeroPage>

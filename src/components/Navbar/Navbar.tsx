@@ -3,7 +3,7 @@ import './Navbar.scss';
 
 export default function Navbar() {
   return (
-    <div className="flex flex-col items-center space-y-3 text-white p-10 w-3/12 fixed h-screen bg-gray-800">
+    <div className="flex flex-col items-center space-y-3 sticky top-0 text-white p-10 w-3/12 h-screen bg-gray-800">
       <img src={profile} className="w-32 border-4 outline-gray-800 border-gray-300 rounded-full" />
       <p className="text-2xl">Prajwal Shetty</p>
       <div className="flex w-full justify-center space-x-6">
@@ -118,7 +118,7 @@ export default function Navbar() {
           </svg>
           <p>Projects</p>
         </a>
-        <a href="#projects" className="space-x-5 flex items-center text-xl">
+        <a href="#work" className="space-x-5 flex items-center text-xl">
           <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
             <path
               d="M8 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7H16M8 7V3.6C8 3.26863 8.26863 3 8.6 3H15.4C15.7314 3 16 3.26863 16 3.6V7M8 7H16"
