@@ -3,7 +3,7 @@ import { ButtonPropsDto } from '../dto';
 export const buttonList: Array<ButtonPropsDto> = [
   {
     classes:
-      'flex space-x-2 items-center group transition duration-500 transform hover:-translate-y-1 text-gray-800 border-b-8 border-gray-800 bg-white rounded-lg w-fit p-3 text-xl hover:text-white hover:bg-gray-800 hover:border-gray-400 border-2',
+      'flex space-x-2 items-center group transition duration-500 transform hover:-translate-y-1 text-gray-800 border-b-8 border-gray-800 bg-white rounded-lg w-fit p-3 text-md lg:text-xl hover:text-white hover:bg-gray-800 hover:border-gray-400 border-2',
     image: (
       <svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
         <path
