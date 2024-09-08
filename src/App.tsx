@@ -15,7 +15,7 @@ function App() {
   const [toggleDisplay, setToggleDisplay] = useState(false);
   return (
     <div className="flex w-full h-full">
-      <Navbar display={toggleDisplay}></Navbar>
+      <Navbar display={toggleDisplay} setToggleDisplay={setToggleDisplay}></Navbar>
       <div className="lg:w-9/12 w-full">
         <FloatingButton setToggleDisplay={setToggleDisplay} toggleDisplay={toggleDisplay}></FloatingButton>
         <HeroPage></HeroPage>
