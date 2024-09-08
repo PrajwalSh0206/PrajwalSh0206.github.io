@@ -8,12 +8,16 @@ import Contacts from './components/Contacts/Contacts';
 import Navbar from './components/Navbar/Navbar';
 import Projects from './components/Projects';
 import Work from './components/Work/Work';
+import { useState } from 'react';
+import FloatingButton from './components/common/FloatingButton';
 
 function App() {
+  const [toggleDisplay, setToggleDisplay] = useState(false);
   return (
     <div className="flex w-full h-full">
-      <Navbar></Navbar>
+      <Navbar display={toggleDisplay}></Navbar>
       <div className="lg:w-9/12 w-full">
+        <FloatingButton setToggleDisplay={setToggleDisplay} toggleDisplay={toggleDisplay}></FloatingButton>
         <HeroPage></HeroPage>
         <About></About>
         <Skill></Skill>
