@@ -2,7 +2,7 @@ import './Footer.scss';
 
 const FooterSection = () => {
   return (
-    <div className="w-full p-5 flex text-white justify-between bg-gray-900">
+    <div className="w-full lg:py-10 py-5 px-10 lg:px-20 flex text-white justify-between bg-gray-900">
       <div className="flex space-x-2">
         <svg width="24px" height="24px" strokeWidth="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
           <path
