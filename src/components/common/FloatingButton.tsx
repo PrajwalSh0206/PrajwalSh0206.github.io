@@ -8,7 +8,7 @@ interface FloatingButtonProps {
 const FloatingButton: React.FC<FloatingButtonProps> = function ({ setToggleDisplay, toggleDisplay }) {
   return (
     <button
-      className="p-3 md:p-5 fixed lg:hidden bottom-5 md:bottom-10 right-5 md:right-10 rounded-full bg-indigo-950 text-white z-50 transform active:scale-90 duration-75 shadow-md"
+      className="p-4 md:p-5 fixed lg:hidden bottom-5 md:bottom-10 right-5 md:right-10 rounded-full bg-indigo-950 text-white z-50 transform active:scale-90 duration-75 shadow-md"
       onClick={() => setToggleDisplay(!toggleDisplay)}
     >
       {toggleDisplay ? (
