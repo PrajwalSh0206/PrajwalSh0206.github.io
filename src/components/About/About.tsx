@@ -2,7 +2,7 @@ import Title from '../common/Title';
 
 const About = () => {
   return (
-    <div className="p-20 text-white space-y-6 bg-gray-700 flex flex-col items-start text-justify" id="about">
+    <div className="p-10 lg:p-20 text-white space-y-6 bg-gray-700 flex text-sm lg:text-lg flex-col items-start text-justify" id="about">
       <Title borderColor="bg-white" title="What I Do"></Title>
       <div className="flex w-full space-x-10 items-start">
         <section className="flex space-x-5 items-start w-6/12">
@@ -19,7 +19,7 @@ const About = () => {
             </svg>
           </div>
           <div>
-            <p className="text-xl">UI Developer</p>
+            <p className="text-lg lg:text-xl">UI Developer</p>
             <p className="text-gray-200">
               Specializes in creating visually appealing and user-friendly interfaces, focusing on front-end technologies like HTML, CSS, JavaScript, and
               frameworks like React to ensure a seamless user experience.
@@ -44,7 +44,7 @@ const About = () => {
             </svg>
           </div>
           <div>
-            <p className="text-xl">Backend Developer</p>
+            <p className="text-lg lg:text-xl">Backend Developer</p>
             <p className="text-gray-200">
               Focuses on server-side logic, database interactions, and API development, using technologies like Node.js, Express, and databases such as
               PostgreSQL or MySQL.

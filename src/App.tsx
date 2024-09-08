@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="flex w-full h-full">
       <Navbar></Navbar>
-      <div className="w-9/12">
+      <div className="lg:w-9/12 w-full">
         <HeroPage></HeroPage>
         <About></About>
         <Skill></Skill>

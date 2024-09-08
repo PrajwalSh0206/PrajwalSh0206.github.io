@@ -3,7 +3,7 @@ import './Navbar.scss';
 
 export default function Navbar() {
   return (
-    <div className="flex flex-col items-center space-y-3 sticky top-0 text-white p-10 w-3/12 h-screen bg-gray-800">
+    <div className="flex flex-col items-center space-y-3 lg:sticky top-0 text-white p-10 w-3/12 h-screen bg-gray-800 fixed -left-full">
       <img src={profile} className="w-32 border-4 outline-gray-800 border-gray-300 rounded-full" />
       <p className="text-2xl">Prajwal Shetty</p>
       <div className="flex w-full justify-center space-x-6">

@@ -2,7 +2,7 @@ import Title from '../common/Title';
 
 export default function Contacts() {
   return (
-    <div className="w-full bg-gray-700 p-20 flex items-start flex-col space-y-5 text-white" id="contacts">
+    <div className="w-full bg-gray-700 p-10 lg:p-20 flex items-start flex-col space-y-5 text-white" id="contacts">
       <Title title="Contact Me" borderColor="bg-white"></Title>
       <div className="space-x-5 flex w-full">
         <input type="text" className="w-full p-3 outline-none focus:outline-white outline-gray-400 bg-gray-700 rounded-md " placeholder="Name" />

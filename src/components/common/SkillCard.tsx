@@ -3,7 +3,7 @@ import { SkillPropsDto } from '../../props/dto';
 
 const SkillCard: React.FC<SkillPropsDto> = ({ width, percent, title }) => {
   return (
-    <section className="item w-6/12 flex flex-col space-y-2 text-gray-800">
+    <section className="py-2 pr-4 w-4/12 flex flex-col space-y-2  text-gray-800">
       <div className="flex justify-between">
         <p>{title}</p>
         <p>{percent}</p>

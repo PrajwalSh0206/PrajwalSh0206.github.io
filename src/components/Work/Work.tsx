@@ -3,7 +3,7 @@ import './Work.scss';
 
 function Work() {
   return (
-    <div className="p-20 bg-gray-200 space-y-5 flex flex-col items-start" id="work">
+    <div className="p-10 lg:p-20 bg-gray-200 space-y-5 flex flex-col items-start" id="work">
       <Title title="Work Experience" borderColor="bg-gray-800"></Title>
 
       <div className="border-l-2 pl-10 border-gray-800 experience">
