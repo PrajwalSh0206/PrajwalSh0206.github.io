@@ -4,7 +4,7 @@ import Title from '../common/Title';
 
 function Skill() {
   return (
-    <div className="p-10 lg:p-20 space-y-3 lg:space-y-5 bg-gray-200 text-gray-800 items-start flex flex-col" id="skills">
+    <div className="p-10 lg:p-20 space-y-3 lg:space-y-5 bg-gray-200 text-gray-800 items-center md:items-start flex flex-col" id="skills">
       <Title title="My Skills" borderColor="bg-gray-800"></Title>
       <div className="flex relative w-full flex-wrap">
         {skillList.map(skill => (

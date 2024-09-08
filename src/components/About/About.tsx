@@ -2,10 +2,13 @@ import Title from '../common/Title';
 
 const About = () => {
   return (
-    <div className="p-10 lg:p-20 text-white space-y-6 bg-gray-700 flex text-sm lg:text-lg flex-col items-start text-justify" id="about">
+    <div
+      className="p-10 lg:p-20 text-white space-y-6 bg-gray-700 flex text-sm lg:text-lg flex-col items-center md:items-start md:text-justify text-left"
+      id="about"
+    >
       <Title borderColor="bg-white" title="What I Do"></Title>
-      <div className="flex w-full space-x-10 items-start">
-        <section className="flex space-x-5 items-start w-6/12">
+      <div className="flex w-full space-y-5 md:space-x-10 items-start flex-col md:flex-row">
+        <section className="flex space-x-5 items-center md:items-start w-full md:w-6/12">
           <div className="border-2 rounded-full border-white p-3">
             <svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
               <path
@@ -26,7 +29,7 @@ const About = () => {
             </p>
           </div>
         </section>
-        <section className="flex space-x-5 items-start w-6/12">
+        <section className="flex space-x-5 items-center md:items-start w-full md:w-6/12">
           <div className="border-2 rounded-full border-white p-3">
             <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor">
               <path d="M6 18.01L6.01 17.9989" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
