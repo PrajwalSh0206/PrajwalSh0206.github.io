@@ -5,17 +5,21 @@ import Title from './common/Title';
 const Projects = () => {
   return (
     <div className="w-full flex flex-col space-y-5 items-center md:items-start p-10 lg:p-20 bg-gray-700 border-t-2 text-white border-gray-400" id="projects">
-      <Title borderColor="bg-white" title="Projects"></Title>
+      <Title borderColor="bg-white" title="Projects" />
 
-      <div className="w-full flex flex-col items-stretch md:flex-row space-y-5 md:space-y-0 md:space-x-5 space-x-0">
-        {projectList.map(val => (
-          <a
-            href={val.link}
-            className="w-full md:w-6/12 rounded-md flex-col border-gray-200 overflow-hidden grow bg-white shadow-lg text-black border-2 flex items-start"
-          >
-            <p className="text-xl bg-gray-200 px-5 py-3 w-full border-b-2 border-gray-400">{val.title}</p>
-            <p className="p-5 py-3">{val.description}</p>
-          </a>
+      <div className="w-full flex flex-wrap justify-start items-stretch md:flex-row">
+        {projectList.map((val, index) => (
+          <div className="w-full md:w-6/12 py-2 pr-2">
+            <a key={index} href={val.link} className=" rounded-md border-gray-200 bg-white shadow-lg text-black border-2 flex flex-col">
+              <div className="bg-gray-200 px-5 py-3 w-full border-b-2 border-gray-400 flex justify-between">
+                <p className="text-xl ">{val.title}</p>
+                <a href="#" className="text-blue-900">
+                  View
+                </a>
+              </div>
+              <p className="p-5 py-3">{val.description}</p>
+            </a>
+          </div>
         ))}
       </div>
 
