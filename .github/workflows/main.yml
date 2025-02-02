@@ -36,11 +36,11 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Debugging: Ensure the build output exists
-      - name: Verify build output
+      - name: Verify build output # Crucial debugging step
         run: |
           echo "Checking build output..."
-          ls -l ./dist  # Make sure this path matches your build output folder
+          ls -l ./dist  # Or whatever your build output directory is.  "./dist" is common.
+          tree ./dist  # This will give you a tree view of the directory structure. VERY helpful!
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -48,9 +48,11 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages # Explicit artifact name
-          path: './dist' # Ensure this matches the actual build output folder
+          path: './dist' #  Correct: The path to the directory containing your built website
+          # name: github-pages  # Optional:  Only needed if you want a custom artifact name.  Usually, the default "github-pages" is fine.
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3 # Updated from v2 → v3
+        uses: actions/deploy-pages@v3
+        with:
+          # artifact_name: github-pages  #  Usually not needed.  Defaults to "github-pages"
