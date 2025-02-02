@@ -8,7 +8,7 @@ function Work() {
 
       <div className="border-l-2 pl-10 border-gray-800 experience">
         <p className="text-xl">Niveus Solutions</p>
-        <p className="text-gray-700">2021-2024</p>
+        <p className="text-gray-700">2021-2025</p>
         <ul className="mt-5 list-disc text-gray-800">
           <li>
             <span className="text-gray-900 font-medium">React, Sass, and Code Optimization:</span> Worked on a Retirement Project, gaining hands-on experience
