@@ -53,6 +53,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
-        with:
+        uses:
+          actions/deploy-pages@v3
           # artifact_name: github-pages  #  Usually not needed.  Defaults to "github-pages"
